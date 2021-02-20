@@ -1,3 +1,47 @@
 .app {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.search__form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.search__btn {
+  border: 2px solid rgb(230, 226, 13);
+  line-height: 1;
+  margin:0.5em;
+  padding: 1em 2em;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  color: rgb(230, 226, 13);
+  border-radius: 20px;
+  background-color: indigo;
+
+}
+
+.search__btn::after{
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+}
+
+.search__btn:hover {
+  background-color: rgb(230, 226, 13);
+  border:  2px solid transparent;
+  color: indigo;
+  transform: scale(1.05);
+  will-change: transform;
   
 }
