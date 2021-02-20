@@ -21,7 +21,7 @@
   border: 2px solid rgb(230, 226, 13);
   line-height: 1;
   margin:0.5em;
-  padding: 1em 2em;
+  padding: 0.6em 2em;
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   color: rgb(230, 226, 13);
@@ -43,5 +43,10 @@
   color: indigo;
   transform: scale(1.05);
   will-change: transform;
-  
+}
+
+.recipes {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
 }

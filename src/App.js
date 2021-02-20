@@ -38,6 +38,7 @@ const App = () => {
         <input type="text" className="search__bar" value={search} onChange={updateSearch} />
         <button type="submit" className="search__btn">Search</button>
       </form>
+      <div className="recipes">
       {recipies.map(recipie => (
         <Recipie 
           key={recipie.recipe.label}
@@ -46,7 +47,9 @@ const App = () => {
           image={recipie.recipe.image}
           ingredients={recipie.recipe.ingredients}
         />
-      ))}
+       ))}
+      </div>
+      
     </div>
   );
 };
